@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tlo_rozmazane">
+
+    <TextView
+        android:id="@+id/edit_account_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EDYTUJ DANE"
+        android:textColor="#000"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll_view"
+        android:layout_below="@+id/edit_account_label"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/email_label"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adres e-mail:" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#000"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textColor="#000"
+                android:textColorHint="@color/Hint"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/name_label"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Imię:" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#000"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#000"
+                android:textColorHint="@color/Hint"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/second_name_label"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Drugie imię:" />
+
+            <EditText
+                android:id="@+id/second_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#000"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#000"
+                android:textColorHint="@color/Hint"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/last_name_label"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nazwisko:" />
+
+            <EditText
+                android:id="@+id/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#000"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#000"
+                android:textColorHint="@color/Hint"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/phone_number_label"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Numer telefonu:" />
+
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#000"
+                android:ems="10"
+                android:inputType="phone"
+                android:textColor="#000"
+                android:textColorHint="@color/Hint"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/postcode_label"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kod pocztowy:" />
+
+            <EditText
+                android:id="@+id/postcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#000"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="#000"
+                android:textColorHint="@color/Hint"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/place_label"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Miejscowość:" />
+
+            <EditText
+                android:id="@+id/place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#000"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#000"
+                android:textColorHint="@color/Hint"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_update"
+                android:background="#4A73B0"
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:alpha="0.8"
+                android:layout_below="@+id/scroll_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Zaktualizuj" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

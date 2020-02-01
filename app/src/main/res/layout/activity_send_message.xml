@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tlo_rozmazane"
+    tools:context=".SendMessageActivity">
+
+    <TextView
+        android:id="@+id/send_message_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:text="wyślij wiadomość"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_below="@+id/send_message_label"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/message_to_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/message"
+        android:text="Do:" />
+
+    <TextView
+        android:id="@+id/message_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/message_to_label"
+        android:text="message_to" />
+
+    <TextView
+        android:id="@+id/about_flat_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/message_to"
+        android:text="W sprawie mieszkania nr:" />
+
+    <TextView
+        android:id="@+id/about_flat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/about_flat_label"
+        android:text="about_flat" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wyślij wiadomość"
+        android:layout_alignParentBottom="true"
+        android:textSize="15sp"
+        android:alpha="0.8"
+        android:background="#4A73B0"
+        android:textColor="@color/colorAccent" />
+
+</RelativeLayout>

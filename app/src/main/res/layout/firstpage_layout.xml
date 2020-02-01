@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="532px"
+        android:layout_height="289px"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/application_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerInParent="true"
+        android:textSize="30dp"
+        android:text="KWADRAT."
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/btn_login_start"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/application_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:alpha="0.80"
+        android:background="#4A73B0"
+        android:text="@string/signin"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/btn_register_start"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/btn_login_start"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:alpha="0.80"
+        android:background="#4A73B0"
+        android:text="@string/register"
+        android:textSize="17sp" />
+
+</RelativeLayout>

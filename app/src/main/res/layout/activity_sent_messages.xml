@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tlo_rozmazane"
+    tools:context=".SentMessagesActivity">
+
+    <TextView
+        android:id="@+id/messages_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:text="Wiadomości wysłane"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="60dp"
+        android:layout_below="@+id/messages_label" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/messages" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_received"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wiadomości odebrane"
+        android:layout_alignParentBottom="true"
+        android:textSize="15sp"
+        android:alpha="0.8"
+        android:background="#4A73B0"
+        android:textColor="@color/colorAccent" />
+
+</RelativeLayout>

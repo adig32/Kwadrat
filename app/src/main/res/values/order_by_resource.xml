@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="order_by_array">
+        <item>Data dodania (rosnąco)</item>
+        <item>Data dodania (malejąco)</item>
+        <item>Cena (rosnąco)</item>
+        <item>Cena (malejąco)</item>
+        <item>Metraż mieszkania (rosnąco)</item>
+        <item>Metraż mieszkania (malejąco)</item>
+    </string-array>
+</resources>

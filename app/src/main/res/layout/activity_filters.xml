@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FiltersActivity"
+    android:background="@drawable/tlo_rozmazane">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/add_flat_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FILTROWANIE OGŁOSZEŃ"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_flat_label"
+        android:layout_margin="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <TextView
+                android:id="@+id/rent_min_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cena (od):" />
+
+            <EditText
+                android:id="@+id/rent_min"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/rent_max_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Cena (do):" />
+
+            <EditText
+                android:id="@+id/rent_max"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/flat_area_min_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Metraż mieszkania (od):" />
+
+            <EditText
+                android:id="@+id/flat_area_min"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/flat_area_max_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Metraż mieszkania (do):" />
+
+            <EditText
+                android:id="@+id/flat_area_max"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="20sp"/>
+
+            <CheckBox
+            android:id="@+id/city_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="#696969"
+            android:text="Miejscowość:" />
+
+            <Spinner
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextView" />
+
+            <CheckBox
+                android:id="@+id/district_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="#696969"
+                android:text="Dzielnica:" />
+
+            <Spinner
+                android:id="@+id/district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextView" />
+
+            <TextView
+                android:id="@+id/order_by_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Sortuj według:" />
+
+            <Spinner
+                android:id="@+id/order_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextView" />
+
+            <Button
+                android:id="@+id/btn_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wyświetl"
+                android:layout_marginTop="25dp"
+                android:textSize="15sp"
+                android:alpha="0.8"
+                android:background="#4A73B0"
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

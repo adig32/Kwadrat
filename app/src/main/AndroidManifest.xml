@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kwadrat">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="KWADRAT."
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".SendReviewActivity"></activity>
+        <activity android:name=".ReviewsActivity" />
+        <activity android:name=".RentFlatActivity" />
+        <activity android:name=".SentMessagesActivity" />
+        <activity android:name=".MessagesActivity" />
+        <activity android:name=".SendMessageActivity" />
+        <activity android:name=".ReplyMessageActivity" />
+        <activity android:name=".FavouriteOfferDetailsActivity" />
+        <activity android:name=".FavouritesActivity" />
+        <activity android:name=".MyOfferDetailsActivity" />
+        <activity android:name=".AddFlat5Activity" />
+        <activity android:name=".AddFlat4Activity" />
+        <activity android:name=".FiltersActivity" />
+        <activity android:name=".AllOffersActivity" />
+        <activity android:name=".AddFlat3Activity" />
+        <activity android:name=".OfferDetailsActivity" />
+        <activity android:name=".AddFlat2Activity" />
+        <activity android:name=".MyOffersActivity" />
+        <activity android:name=".UpdateProfileActivity" />
+        <activity android:name=".AddFlat1Activity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".FirstPageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

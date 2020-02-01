@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/homePage" android:title="Strona główna" android:icon="@drawable/ic_home_black_24dp"/>
+    <item android:id="@+id/add" android:title="Dodaj ogłoszenie" android:icon="@drawable/ic_add_box_black_24dp"/>
+    <item android:id="@+id/opinions" android:title="Opinie" android:icon="@drawable/ic_event_note_black_24dp"/>
+    <item android:id="@+id/myProfile" android:title="Mój profil" android:icon="@drawable/ic_person_black_24dp"/>
+    <item android:id="@+id/messages" android:title="Wiadomości" android:icon="@drawable/ic_message_black_24dp"/>
+    <item android:id="@+id/editProfile" android:title="Edytuj profil" android:icon="@drawable/ic_edit_black_24dp"/>
+    <item android:id="@+id/logout" android:title="Wyloguj się" android:icon="@drawable/ic_close_black_24dp"/>
+
+</menu>

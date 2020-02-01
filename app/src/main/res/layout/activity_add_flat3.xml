@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFlat3Activity"
+    android:background="@drawable/tlo_rozmazane">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/add_flat_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DODAJ OGŁOSZENIE"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_flat_label"
+        android:layout_margin="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <TextView
+                android:id="@+id/rubbish_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sposób utylizacji odpadów (np. zsyp, segregacja itp.):" />
+
+            <EditText
+                android:id="@+id/rubbish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/flat_direction_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Kierunek mieszkania:" />
+
+            <EditText
+                android:id="@+id/flat_direction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/brightness_of_flat_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Jasność mieszkania:" />
+
+            <EditText
+                android:id="@+id/brightness_of_flat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/environment_description_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Opis otoczenia:" />
+
+            <EditText
+                android:id="@+id/environment_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/number_of_lifts_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Liczba wind:" />
+
+            <EditText
+                android:id="@+id/number_of_lifts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/additional_options_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Dodatkowe opcje:" />
+
+            <CheckBox
+                android:id="@+id/garage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Mieszkanie posiada własny garaż" />
+
+            <CheckBox
+                android:id="@+id/balcony"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Mieszkanie posiada balkon" />
+
+            <CheckBox
+                android:id="@+id/animals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Zgoda na lokatorów ze zwierzętami" />
+
+            <CheckBox
+                android:id="@+id/family_with_children"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Zgoda na rodziny z dziećmi" />
+
+            <CheckBox
+                android:id="@+id/smoking_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Zgoda na palących lokatorów" />
+
+            <CheckBox
+                android:id="@+id/sublet_permission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Zgoda na podnajem" />
+
+            <TextView
+                android:id="@+id/available_from_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Mieszkanie dostępne od:" />
+
+            <EditText
+                android:id="@+id/available_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
+
+            <ImageButton
+                android:id="@+id/btn_set_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_today" />
+
+            <TextView
+                android:id="@+id/description_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Dodatkowy opis mieszkania:" />
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="10dp"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Przejdź dalej"
+                android:layout_marginTop="25dp"
+                android:textSize="15sp"
+                android:alpha="0.8"
+                android:background="#4A73B0"
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFlat2Activity"
+    android:background="@drawable/tlo_rozmazane">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/add_flat_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DODAJ OGŁOSZENIE"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_flat_label"
+        android:layout_margin="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <TextView
+                android:id="@+id/district_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dzielnica:" />
+
+            <Spinner
+                android:id="@+id/district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.MaterialComponents.TextView" />
+
+            <TextView
+                android:id="@+id/floor_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Piętro:" />
+
+            <Spinner
+                android:id="@+id/floor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.MaterialComponents.TextView" />
+
+            <TextView
+                android:id="@+id/number_of_floors_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Liczba pięter w budynku:" />
+
+            <EditText
+                android:id="@+id/number_of_floors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/ground_floor_flats_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Liczba mieszkań na piętrze:" />
+
+            <EditText
+                android:id="@+id/ground_floor_flats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/number_of_rooms_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Liczba pokoi:" />
+
+            <Spinner
+                android:id="@+id/number_of_rooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.MaterialComponents.TextView" />
+
+            <TextView
+                android:id="@+id/type_of_building_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Rodzaj zabudowy:" />
+
+            <Spinner
+                android:id="@+id/type_of_building"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.MaterialComponents.TextView" />
+
+            <TextView
+                android:id="@+id/heating_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Rodzaj ogrzewania:" />
+
+            <Spinner
+                android:id="@+id/heating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.MaterialComponents.TextView" />
+
+            <TextView
+                android:id="@+id/parking_place_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Miejsce parkingowe:" />
+
+            <Spinner
+                android:id="@+id/parking_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.MaterialComponents.TextView" />
+
+            <TextView
+                android:id="@+id/number_of_parking_place_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Liczba miejsc parkingowych:" />
+
+            <EditText
+                android:id="@+id/number_of_parking_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Przejdź dalej"
+                android:layout_marginTop="25dp"
+                android:textSize="15sp"
+                android:alpha="0.8"
+                android:background="#4A73B0"
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

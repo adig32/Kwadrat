@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tlo_rozmazane"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:text="Witaj"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text"
+            android:gravity="center"
+            android:text="Name"
+            android:textColor="@color/Hint"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:gravity="center"
+            android:text="Email" />
+
+        <ImageButton
+            android:id="@+id/btn_search"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="80dp"
+            android:background="#252525"
+            android:src="@drawable/ic_search_black_100dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/Hint"
+            android:textSize="30sp" />
+
+        <ImageButton
+            android:id="@+id/btn_add"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:background="#252525"
+            android:scaleType="fitCenter"
+            android:src="@drawable/add" />
+
+        <LinearLayout
+            android:id="@+id/buttons_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/btn_add"
+            android:gravity="bottom"
+            android:layout_marginTop="70dp">
+
+            <Button
+                android:id="@+id/btn_offers"
+                android:layout_weight="0.50"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:alpha="0.9"
+                android:background="#4A73B0"
+                android:text="Moje oferty" />
+
+            <Button
+                android:id="@+id/btn_profile"
+                android:layout_weight="0.50"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:alpha="0.9"
+                android:background="#4A73B0"
+                android:text="Mój profil" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttons_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:layout_below="@+id/buttons_1">
+
+            <Button
+                android:id="@+id/btn_messages"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.50"
+                android:alpha="0.9"
+                android:background="#4A73B0"
+                android:text="Wiadomości" />
+
+            <Button
+                android:id="@+id/btn_fav"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.50"
+                android:alpha="0.9"
+                android:background="#4A73B0"
+                android:text="Obserwowane" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttons_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:layout_below="@+id/buttons_2">
+
+            <Button
+                android:id="@+id/btn_review"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:alpha="0.9"
+                android:background="#4A73B0"
+                android:text="Wystaw opinię" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:alpha="0.8"
+            android:background="#FFF"
+            android:text="Wyloguj" />
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

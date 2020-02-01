@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFlat1Activity"
+    android:background="@drawable/tlo_rozmazane">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/add_flat_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DODAJ OGŁOSZENIE"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_flat_label"
+        android:layout_margin="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <TextView
+                android:id="@+id/city_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Miasto:" />
+
+            <Spinner
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.MaterialComponents.TextView" />
+
+            <TextView
+                android:id="@+id/street_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Ulica:" />
+
+            <EditText
+                android:id="@+id/street"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/number_of_tenants_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Maksymalna liczba lokatorów:" />
+
+            <EditText
+                android:id="@+id/number_of_tenants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/flat_area_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Powierzchnia mieszkania (m²):" />
+
+            <EditText
+                android:id="@+id/flat_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/rent_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Cena wynajmu (zł):" />
+
+            <EditText
+                android:id="@+id/rent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/media_fees_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Opłata za media (zł):" />
+
+            <EditText
+                android:id="@+id/media_fees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/additional_fees_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Opłaty dodatkowe (zł):" />
+
+            <EditText
+                android:id="@+id/additional_fees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/deposit_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Kaucja (zł):" />
+
+            <EditText
+                android:id="@+id/deposit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Przejdź dalej"
+                android:layout_marginTop="25dp"
+                android:textSize="15sp"
+                android:alpha="0.8"
+                android:background="#4A73B0"
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

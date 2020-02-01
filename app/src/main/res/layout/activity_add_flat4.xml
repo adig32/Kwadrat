@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFlat4Activity"
+    android:background="@drawable/tlo_rozmazane">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/add_flat_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DODAJ OGŁOSZENIE"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_flat_label"
+        android:layout_margin="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <TextView
+                android:id="@+id/flat_equipment_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wyposażenie mieszkania:" />
+
+                <CheckBox
+                    android:id="@+id/hoover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="odkurzacz" />
+
+                <CheckBox
+                    android:id="@+id/tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="telewizor" />
+
+                <CheckBox
+                    android:id="@+id/bed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="łóżko" />
+
+                <CheckBox
+                    android:id="@+id/bedclothes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="pościel" />
+
+                <CheckBox
+                    android:id="@+id/blinds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="rolety" />
+
+                <CheckBox
+                    android:id="@+id/ironing_board"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="deska do prasowania" />
+
+                <CheckBox
+                    android:id="@+id/wardrobe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="szafa" />
+
+                <CheckBox
+                    android:id="@+id/desk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="biurko" />
+
+                <CheckBox
+                    android:id="@+id/iron"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="żelazko" />
+
+            <TextView
+                android:id="@+id/bathroom_equipment_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Wyposażenie łazienki:" />
+
+                <CheckBox
+                    android:id="@+id/washer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="pralka" />
+
+                <CheckBox
+                    android:id="@+id/shower"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="prysznic" />
+
+                <CheckBox
+                    android:id="@+id/bath"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="wanna" />
+
+                <CheckBox
+                    android:id="@+id/towels"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="zestaw ręczników" />
+
+                <CheckBox
+                    android:id="@+id/clothes_dryer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="suszarka do ubrań" />
+
+                <CheckBox
+                    android:id="@+id/hair_dryer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="suszarka do włosów" />
+
+                <CheckBox
+                    android:id="@+id/mirror"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="lustro" />
+
+                <CheckBox
+                    android:id="@+id/mop_bucket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="wiadro z mopem" />
+
+                <CheckBox
+                    android:id="@+id/detergents"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="detergenty" />
+
+            <TextView
+                android:id="@+id/kitchen_equipment_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Wyposażenie kuchni:" />
+
+                <CheckBox
+                    android:id="@+id/fridge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="lodówka" />
+
+                <CheckBox
+                    android:id="@+id/electric_kettle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="czajnik elektryczny" />
+
+                <CheckBox
+                    android:id="@+id/heating_plate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="płyta grzewcza" />
+
+                <CheckBox
+                    android:id="@+id/kitchenware"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="zastawa kuchenna" />
+
+                <CheckBox
+                    android:id="@+id/openers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="otwieracze (np. do wina, piwa)" />
+
+                <CheckBox
+                    android:id="@+id/pots"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="zestaw garnków" />
+
+                <CheckBox
+                    android:id="@+id/washing_machine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="zmywarka" />
+
+                <CheckBox
+                    android:id="@+id/coffe_machine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="ekspres do kawy" />
+
+                <CheckBox
+                    android:id="@+id/microwave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="mikrofalówka" />
+
+                <CheckBox
+                    android:id="@+id/oven"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="piekarnik" />
+
+                <CheckBox
+                    android:id="@+id/toaster"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="toster / opiekacz" />
+
+            <TextView
+                android:id="@+id/media_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Wyposażenie kuchni:" />
+
+                <CheckBox
+                    android:id="@+id/internet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Internet" />
+
+                <CheckBox
+                    android:id="@+id/cable_television"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Telewizja kablowa" />
+
+                <CheckBox
+                    android:id="@+id/digital_television"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Telewizja cyfrowa" />
+
+                <CheckBox
+                    android:id="@+id/telephone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Telefon" />
+
+            <TextView
+                android:id="@+id/inconveniences_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Niedogodności:" />
+
+                <EditText
+                    android:id="@+id/inconveniences"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Przejdź dalej"
+                android:layout_marginTop="25dp"
+                android:textSize="15sp"
+                android:alpha="0.8"
+                android:background="#4A73B0"
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

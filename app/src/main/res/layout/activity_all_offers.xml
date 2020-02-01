@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tlo_rozmazane"
+    tools:context=".AllOffersActivity">
+
+    <TextView
+        android:id="@+id/my_offers_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:text="OGŁOSZENIA"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="60dp"
+        android:layout_below="@+id/my_offers_label" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/all_offers" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btn_filters"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4A73B0"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"
+        android:alpha="0.8"
+        android:layout_marginTop="20dp"
+        android:text="Filtrowanie i sortowanie" />
+
+</RelativeLayout>

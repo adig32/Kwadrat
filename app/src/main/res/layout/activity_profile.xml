@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@drawable/tlo_rozmazane">
+
+    <TextView
+        android:id="@+id/my_account_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MOJE DANE"
+        android:textColor="#000"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_below="@id/my_account_label">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/id_label"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ID użytkownika:" />
+
+            <TextView
+                android:id="@+id/id_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wczytywanie..."
+                android:textColor="#000"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/login_label"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login:" />
+
+            <TextView
+                android:id="@+id/login_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wczytywanie..."
+                android:textColor="#000"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/name_label"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Imię:" />
+
+            <TextView
+                android:id="@+id/name_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wczytywanie..."
+                android:textColor="#000"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/second_name_label"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Drugie imię:" />
+
+            <TextView
+                android:id="@+id/second_name_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wczytywanie..."
+                android:textColor="#000"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/last_name_label"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nazwisko:" />
+
+            <TextView
+                android:id="@+id/last_name_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wczytywanie..."
+                android:textColor="#000"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/birth_date_label"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data urodzenia:" />
+
+            <TextView
+                android:id="@+id/birth_date_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wczytywanie..."
+                android:textColor="#000"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/place_label"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Miejscowość:" />
+
+            <TextView
+                android:id="@+id/place_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wczytywanie..."
+                android:textColor="#000"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/postcode_label"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kod pocztowy:" />
+
+            <TextView
+                android:id="@+id/postcode_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wczytywanie..."
+                android:textColor="#000"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/gender_label"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Płeć:" />
+
+            <TextView
+                android:id="@+id/gender_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wczytywanie..."
+                android:textColor="#000"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/phone_number_label"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Numer telefonu:" />
+
+            <TextView
+                android:id="@+id/phone_number_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wczytywanie..."
+                android:textColor="#000"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/email_label"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adres e-mail:" />
+
+            <TextView
+                android:id="@+id/email_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wczytywanie..."
+                android:textColor="#000"
+                android:textSize="25sp"/>
+
+            <Button
+                android:id="@+id/btn_edit"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edytuj dane"
+                android:textSize="15sp"
+                android:alpha="0.8"
+                android:background="#4A73B0"
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
